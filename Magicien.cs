@@ -8,4 +8,12 @@ class Magicien : Personnage
         this.puissanceMagique = puissanceMagique;
     }
 
+    //override
+
+    public override void Afficher()
+    {
+        // base.Afficher();
+        Console.WriteLine($"Magicien: {nom}\nHealth Points: {pointsDeVie}\nPuissance MAgique: {puissanceMagique}");
+    }
+
 }

@@ -14,7 +14,7 @@ class Personnage
     {
         return pointsDeVie -= degats;
     }
-    public void Afficher()
+    public virtual void Afficher()
     {
         Console.WriteLine($"Nom Personnage: {nom}\nHealth Points: {pointsDeVie}");
     }
