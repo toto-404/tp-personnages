@@ -8,4 +8,12 @@ class Program
         p1.RecevoirDegats(50);
         p1.Afficher();
     }
+
+    //guerrier
+
+    Guerrier g1 = new Guerrier("Gurrier", 600, 100);
+
+
+    //Magicien
+    Magicien m1 = new Magicien("Roku le magicien", 500, 300);
 }

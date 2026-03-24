@@ -1,7 +1,7 @@
 class Personnage
 {
-    protected string nom {get;set;}
-    protected int pointsDeVie{get;set;}
+    private protected string nom {get;set;}
+    private protected int pointsDeVie{get;set;}
     
     //constuctor
     public Personnage (string nom, int pointsDeVie)
