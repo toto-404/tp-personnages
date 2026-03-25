@@ -28,5 +28,16 @@ class Program
 
         m1.LancerSort();
         g1.Attaquer();
+
+        //creation de liste de personnage p7
+        Console.WriteLine("=====polymorph test======");
+        List <Personnage> personnages = new List<Personnage>();
+        personnages.Add(new Magicien("Loko le magicien", 300, 100));
+        personnages.Add(new Guerrier("Hluk le guerrier",1500,500));
+
+        foreach(Personnage personnage in personnages)
+        {
+            personnage.Afficher();
+        }
     }
 }
