@@ -38,6 +38,8 @@ class Program
         foreach(Personnage personnage in personnages)
         {
             personnage.Afficher();
+            //teste avec une autr méthode p8
+           // personnage.Attaquer(); //erreur de compilation
         }
     }
 }
