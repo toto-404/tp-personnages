@@ -15,4 +15,10 @@ class Guerrier : Personnage
         Console.WriteLine($"Guerrier: {nom}\nHealth Points: {pointsDeVie}\nArmure: {armure}");
     }
 
+    //p6 méthodes spécifiques
+
+    public void Attaquer()
+    {
+        Console.WriteLine($"Le guerrier {nom} attaque");
+    }
 }

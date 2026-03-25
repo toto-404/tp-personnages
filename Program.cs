@@ -25,5 +25,8 @@ class Program
         m1.Afficher();
         Console.WriteLine($"Après dégats: {m1.RecevoirDegats(50)}");
         Console.WriteLine($"Après réduction et dégats: {m1.RecevoirDegats(50,20)}");
+
+        m1.LancerSort();
+        g1.Attaquer();
     }
 }
