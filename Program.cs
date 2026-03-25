@@ -19,5 +19,11 @@ class Program
         Console.WriteLine("MAGICIEN");
         Magicien m1 = new Magicien("Merlin", 80, 50);
         m1.Afficher();
+
+        //test method degats reduction
+
+        m1.Afficher();
+        Console.WriteLine($"Après dégats: {m1.RecevoirDegats(50)}");
+        Console.WriteLine($"Après réduction et dégats: {m1.RecevoirDegats(50,20)}");
     }
 }
