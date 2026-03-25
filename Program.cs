@@ -35,11 +35,23 @@ class Program
         personnages.Add(new Magicien("Loko le magicien", 300, 100));
         personnages.Add(new Guerrier("Hluk le guerrier",1500,500));
 
+
         foreach(Personnage personnage in personnages)
         {
             personnage.Afficher();
             //teste avec une autr méthode p8
            // personnage.Attaquer(); //erreur de compilation
+           
+        Console.WriteLine("=====polymorph foreach test======");
+
+           if(personnage is Magicien m)
+            {
+                m.LancerSort();
+            }
+            else if (personnage is Guerrier g)
+            {
+                g.Attaquer();
+            }
         }
     }
 }
