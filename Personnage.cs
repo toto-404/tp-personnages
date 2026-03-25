@@ -22,4 +22,9 @@ class Personnage
     {
         Console.WriteLine($"Nom Personnage: {nom}\nHealth Points: {pointsDeVie}");
     }
+
+    public virtual string ToString()
+    {
+        return $"Nom: {nom}\nPV: {pointsDeVie}";
+    }
 }

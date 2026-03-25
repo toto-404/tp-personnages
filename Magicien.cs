@@ -22,4 +22,8 @@ class Magicien : Personnage
         Console.WriteLine($"Le magicien {nom} lance un sort");
     }
 
+    public override string ToString()
+    {
+        return $"{base.ToString()}\nPuissance Magique: {puissanceMagique}";
+    }
 }

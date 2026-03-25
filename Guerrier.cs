@@ -21,4 +21,8 @@ class Guerrier : Personnage
     {
         Console.WriteLine($"Le guerrier {nom} attaque");
     }
+    public override string ToString()
+    {
+        return $"{base.ToString()}\nArmure {armure}";
+    }
 }

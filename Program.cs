@@ -34,6 +34,7 @@ class Program
         List<Personnage> personnages = new List<Personnage>();
         personnages.Add(new Magicien("Loko le magicien", 300, 100));
         personnages.Add(new Guerrier("Hluk le guerrier", 1500, 500));
+        personnages.Add(new Archer("Arch", 500, 10));
 
 
         foreach (Personnage personnage in personnages)
@@ -42,10 +43,10 @@ class Program
             //teste avec une autr méthode p8
             // personnage.Attaquer(); //erreur de compilation
 
-            Console.WriteLine("=====polymorph foreach test======");
+            // Console.WriteLine("=====polymorph foreach test======");
 
             //casting sans securisation
-            
+
             // Guerrier g = (Guerrier)personnage;
             // g.Attaquer();
 
@@ -55,10 +56,18 @@ class Program
             if (personnage is Magicien m)
             {
                 m.LancerSort();
+                m.ToString();
+                Console.WriteLine(m.ToString());
+
             }
             else if (personnage is Guerrier g)
             {
                 g.Attaquer();
+                Console.WriteLine(g.ToString());
+            }
+            else if(personnage is Archer a)
+            {
+                a.Tirer();
             }
         }
     }
